@@ -30,4 +30,4 @@ const contagemRegressiva= (tempo) => {
     const id = setInterval(contar,1000);
 }
 
-contagemRegressiva(112000);
+contagemRegressiva(1120000);
