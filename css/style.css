@@ -47,6 +47,7 @@ body{
     color: black;
     padding: 10px;
     cursor: pointer;
+    border-radius: 8px;
     border: solid 2px whitesmoke;
 }
 
