@@ -1,10 +1,11 @@
-const formatarDigito = (digito) => `0${digito}`;
+const formatarDigito = (digito) => `0${digito}`. slice(-2);
 
 const atualizar = (tempo) => {
     const segundos = document.getElementById('segundos');
 
-    segundos.textContent = formartarDigito(tempo);
+    const qtdSegundos = tempo % 60;
 
+    segundos.textContent = formatarDigito( qtdSegundos);
 }
 
 const contagemRegressiva= (tempo) => {
@@ -20,4 +21,4 @@ const contagemRegressiva= (tempo) => {
     const id = setInterval(contar,1000);
 }
 
-contagemRegressiva(5);
+contagemRegressiva(15);
