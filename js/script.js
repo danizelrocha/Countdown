@@ -30,4 +30,15 @@ const contagemRegressiva= (tempo) => {
     const id = setInterval(contar,1000);
 }
 
-contagemRegressiva(1120000);
+const tempoRestante = () => {
+    const dataEvento = new Date ('2023-12-09 20:30:00'); //base de calculo para auterar o dia e hora do evento.
+    const hoje = Date.now(); 
+    return Math.floor((dataEvento - hoje) / 1000);
+}
+
+contagemRegressiva(tempoRestante());
+
+
+
+
+// CURIOSIDAE A PARTIR DO DIA 1 DE JANEIRO DE 1970 O jS COMEÇA A CONTAR O TEMPO EM MILISEGUNDO
